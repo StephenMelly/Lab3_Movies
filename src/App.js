@@ -12,7 +12,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
-  // required for class ,setup wraps returne method.
+  // required for class ,setup wraps  returne method.
   render() {
     // retruns components from components.js
     return (
