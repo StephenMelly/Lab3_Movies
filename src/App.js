@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 //import controlls for routing
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Read from './components/read';
 
 class App extends Component {
   // required for class ,setup wraps  returne method.
@@ -18,7 +19,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-
+          
           <Navbar bg="primary" variant="dark">
             <Navbar.Brand href="#home">Navbar</Navbar.Brand>
             <Nav className="me-auto">
@@ -29,9 +30,9 @@ class App extends Component {
           </Navbar>
           <br />
           <Switch>
-            <Route path='/' component={Content} exact />
-            <Route path='/create' component={Header} exact />
-            <Route path='/read' component={Footer} exact />
+            <Route path='/'exact><Content /></Route>
+            <Route path="/create"><Header></Header></Route>
+            <Route path="/read"><Read></Read></Route>
           </Switch>
         </div>
       </Router>
